@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let myName: String = "Sharon"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .white
+        
+        print("меня зовут \(myName), я создал новое приложение")
     }
-
-
 }
-
