@@ -6,16 +6,18 @@
 //
 import Foundation
 import UIKit
-class Person: UIViewController {
-    public let myName: String = "Sharon"
-    public let mySurname: String = "Kosman"
+
+
+class Person {
+    public let name: String
+    public let surname: String
+    
+    init(name: String, surname: String) {
+        self.name = name
+        self.surname = surname
+    }
+    
     public var fullName: String {
-        return "\(myName) \(mySurname)"
+        return "\(name) \(surname)"
     }
-    override public func viewDidLoad() {
-        person.viewDidLoad()
-        view.backgroundColor = .white
-        print("мое полное имя? \(fullName)")
-        
-        }
-    }
+}
