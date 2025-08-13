@@ -8,18 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-     let myName: String = "Sharon"
-     let mySurname: String = "Kosman"
-     var fullName: String {
+    let helper = Helper()
     
-
-        return "\(myName) \(mySurname)"
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        print("мое полное имя \(fullName)")
         
+        // Добавляем людей в список
+        helper.addPerson(Person(name: "Sharon", surname: "Kosman"))
+        helper.addPerson(Person(name: "John", surname: "Doe"))
+        helper.addPerson(Person(name: "Anna", surname: "Smith"))
+        
+        // Выводим все имена на консоль
+        let people = helper.getAllPeople()
+        for person in people {
+            print("Полное имя: \(person.fullName)")
         }
     }
-let person = Person()
+}
