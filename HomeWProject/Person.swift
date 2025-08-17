@@ -4,20 +4,35 @@
 //
 //  Created by Шарон on 13.08.2025.
 //
-import Foundation
 import UIKit
 
 
-class Person {
-    public let name: String
-    public let surname: String
+struct Person {
+    let name: String
+    let surname: String
+    
+    var fullName: String {
+        return "\(name) \(surname)"
+    }
     
     init(name: String, surname: String) {
         self.name = name
         self.surname = surname
     }
+}
+
+struct User {
+    let login: String
+    let password: String
+    let person: Person
     
-    public var fullName: String {
-        return "\(name) \(surname)"
+    init(login: String, password: String, person: Person) {
+        self.login = login
+        self.password = password
+        self.person = person
     }
 }
+
+let person1 = Person(name: "Иван", surname: "Иванов")
+let user1 = User(login: "ivan", password: "123", person: person1)
+

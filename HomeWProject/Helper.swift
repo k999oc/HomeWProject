@@ -7,15 +7,15 @@
 import UIKit
 
 class Helper {
-    private var people: [Person] = []
+    private var people: [User] = []
     
     // Метод для добавления человека
-    func addPerson(_ person: Person) {
-        people.append(person)
+    func addPerson(_ user: User) {
+        people.append(user)
     }
     
     // Метод для получения списка людей
-    func getAllPeople() -> [Person] {
+    func getAllPeople() -> [User] {
         return people
     }
 }

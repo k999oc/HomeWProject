@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
     let helper = Helper()
     
@@ -14,15 +13,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        // Создаем объекты Person
+        let person1 = Person(name: "Иван", surname: "Иванов")
+        let person2 = Person(name: "Анна", surname: "Петрова")
+        let person3 = Person(name: "Петр", surname: "Сидоров")
+        
+        // Создаем объекты User
+        let user1 = User(login: "ivan", password: "pass123", person: person1)
+        let user2 = User(login: "anna", password: "pass456", person: person2)
+        let user3 = User(login: "petr", password: "pass789", person: person3)
+        
         // Добавляем людей в список
-        helper.addPerson(Person(name: "Sharon", surname: "Kosman"))
-        helper.addPerson(Person(name: "John", surname: "Doe"))
-        helper.addPerson(Person(name: "Anna", surname: "Smith"))
+        helper.addPerson(user1)
+        helper.addPerson(user2)
+        helper.addPerson(user3)
         
         // Выводим все имена на консоль
         let people = helper.getAllPeople()
-        for person in people {
-            print("Полное имя: \(person.fullName)")
+        for user in people {
+            print("Полное имя: \(user.person.fullName)")
         }
     }
 }
