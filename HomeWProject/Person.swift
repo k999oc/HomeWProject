@@ -14,11 +14,6 @@ struct Person {
     var fullName: String {
         return "\(name) \(surname)"
     }
-    
-    init(name: String, surname: String) {
-        self.name = name
-        self.surname = surname
-    }
 }
 
 struct User {
@@ -26,11 +21,6 @@ struct User {
     let password: String
     let person: Person
     
-    init(login: String, password: String, person: Person) {
-        self.login = login
-        self.password = password
-        self.person = person
-    }
 }
 
 let person1 = Person(name: "Иван", surname: "Иванов")
