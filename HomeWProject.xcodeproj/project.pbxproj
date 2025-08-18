@@ -10,15 +10,28 @@
 		808117602E4BE99400C6AA92 /* HomeWProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		807F3A9F2E5321FA007C14B3 /* Resources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Resources;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		80B60D592E534CA400438C76 /* Exceptions for "Resources" folder in "HomeWProject" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8081175F2E4BE99400C6AA92 /* HomeWProject */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		808117622E4BE99400C6AA92 /* HomeWProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = HomeWProject;
+			sourceTree = "<group>";
+		};
+		80B60D562E534CA300438C76 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				80B60D592E534CA400438C76 /* Exceptions for "Resources" folder in "HomeWProject" target */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -39,7 +52,7 @@
 			children = (
 				808117622E4BE99400C6AA92 /* HomeWProject */,
 				808117612E4BE99400C6AA92 /* Products */,
-				807F3A9F2E5321FA007C14B3 /* Resources */,
+				80B60D562E534CA300438C76 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +80,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				807F3A9F2E5321FA007C14B3 /* Resources */,
 				808117622E4BE99400C6AA92 /* HomeWProject */,
+				80B60D562E534CA300438C76 /* Resources */,
 			);
 			name = HomeWProject;
 			packageProductDependencies = (
@@ -146,6 +159,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -178,6 +192,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
