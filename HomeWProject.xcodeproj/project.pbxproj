@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		808117722E4BE99500C6AA92 /* Exceptions for "HomeWProject" folder in "HomeWProject" target */ = {
+		807F3AA22E5321FA007C14B3 /* Exceptions for "Resources" folder in "HomeWProject" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,11 +21,16 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		808117622E4BE99400C6AA92 /* HomeWProject */ = {
+		807F3A9F2E5321FA007C14B3 /* Resources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				808117722E4BE99500C6AA92 /* Exceptions for "HomeWProject" folder in "HomeWProject" target */,
+				807F3AA22E5321FA007C14B3 /* Exceptions for "Resources" folder in "HomeWProject" target */,
 			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		808117622E4BE99400C6AA92 /* HomeWProject */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
 			path = HomeWProject;
 			sourceTree = "<group>";
 		};
@@ -45,6 +50,7 @@
 		808117572E4BE99400C6AA92 = {
 			isa = PBXGroup;
 			children = (
+				807F3A9F2E5321FA007C14B3 /* Resources */,
 				808117622E4BE99400C6AA92 /* HomeWProject */,
 				808117612E4BE99400C6AA92 /* Products */,
 			);
@@ -74,6 +80,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				807F3A9F2E5321FA007C14B3 /* Resources */,
 				808117622E4BE99400C6AA92 /* HomeWProject */,
 			);
 			name = HomeWProject;
@@ -147,7 +154,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FD9PK9Q4KC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWProject/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -179,7 +186,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FD9PK9Q4KC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWProject/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
