@@ -10,22 +10,14 @@
 		808117602E4BE99400C6AA92 /* HomeWProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		808117722E4BE99500C6AA92 /* Exceptions for "HomeWProject" folder in "HomeWProject" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 8081175F2E4BE99400C6AA92 /* HomeWProject */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		807F3A9F2E5321FA007C14B3 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		808117622E4BE99400C6AA92 /* HomeWProject */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				808117722E4BE99500C6AA92 /* Exceptions for "HomeWProject" folder in "HomeWProject" target */,
-			);
 			path = HomeWProject;
 			sourceTree = "<group>";
 		};
