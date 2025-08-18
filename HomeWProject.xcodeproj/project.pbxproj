@@ -39,6 +39,7 @@
 			children = (
 				808117622E4BE99400C6AA92 /* HomeWProject */,
 				808117612E4BE99400C6AA92 /* Products */,
+				807F3A9F2E5321FA007C14B3 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +67,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				807F3A9F2E5321FA007C14B3 /* Resources */,
 				808117622E4BE99400C6AA92 /* HomeWProject */,
 			);
 			name = HomeWProject;
@@ -139,7 +141,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FD9PK9Q4KC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWProject/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -171,7 +173,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FD9PK9Q4KC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeWProject/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
