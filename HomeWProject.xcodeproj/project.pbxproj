@@ -50,9 +50,9 @@
 		808117572E4BE99400C6AA92 = {
 			isa = PBXGroup;
 			children = (
-				807F3A9F2E5321FA007C14B3 /* Resources */,
 				808117622E4BE99400C6AA92 /* HomeWProject */,
 				808117612E4BE99400C6AA92 /* Products */,
+				807F3A9F2E5321FA007C14B3 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
