@@ -16,6 +16,6 @@ class Helper {
     
     // Метод для получения списка людей
     func getAllPeople() -> [User] {
-        return people
+         people
     }
 }
