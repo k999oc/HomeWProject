@@ -12,7 +12,7 @@ struct Person {
     let surname: String
     
     var fullName: String {
-        return "\(name) \(surname)"
+    "\(name) \(surname)"
     }
 }
 
