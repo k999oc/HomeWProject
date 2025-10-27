@@ -22,7 +22,3 @@ struct User {
     let person: Person
     
 }
-
-let person1 = Person(name: "Иван", surname: "Иванов")
-let user1 = User(login: "ivan", password: "123", person: person1)
-
