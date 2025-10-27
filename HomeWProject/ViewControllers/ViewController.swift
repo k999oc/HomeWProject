@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .systemTeal
+        view.alpha = 0.9
         
         // Создаем объекты Person
         let person1 = Person(name: "Иван", surname: "Иванов")
