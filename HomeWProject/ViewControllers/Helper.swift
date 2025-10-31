@@ -22,17 +22,17 @@ class Helper {
     }
 }
 
-class UserRepository {
-    func getUserRepository () -> [User] {
-      return []
-    }
-}
-let person1 = Person(name: "Иван", surname: "Иванов")
-let person2 = Person(name: "Анна", surname: "Петрова")
-let person3 = Person(name: "Петр", surname: "Сидоров")
-
-// Создаем объекты User
-let user1 = User(login: "ivan", password: "pass123", person: person1)
-let user2 = User(login: "anna", password: "pass456", person: person2)
-let user3 = User(login: "petr", password: "pass789", person: person3)
-
+    class UserRepository {
+        func getUserRepository() -> [User] {
+           
+        let person1 = Person(name: "Иван", surname: "Иванов", age: 22)
+        let person2 = Person(name: "Анна", surname: "Петрова", age: 22)
+        let person3 = Person(name: "Петр", surname: "Сидоров", age: 22)
+            
+            
+        let user1 = User(login: "иван", password: "ivan1", person: person1, name: "Иван", age: 22)
+        let user2 = User(login: "анна", password: "anna2", person: person2, name: "Анна", age: 22)
+        let user3 = User(login: "петр", password: "peter3", person: person3, name: "Петр", age: 22)
+            return [user1, user2, user3]
+        }
+     }
