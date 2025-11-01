@@ -10,6 +10,7 @@ import UIKit
     class ViewController: UIViewController {
        private var helper = PeopleHelper()
         private let textlabel = UILabel()
+        private let repository = UserRepository()
         override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemTeal
@@ -21,9 +22,9 @@ import UIKit
             let person3 = Person(name: "Петр", surname: "", age: 24)
 
         // Создаем пользователей
-        let user1 = User(login: "иван", password: "ivan1", person: person1, name: "иван", age: 22)
-        let user2 = User(login: "анна", password: "anna2", person: person2, name: "анна", age: 23)
-        let user3 = User(login: "петр", password: "peter3", person: person3, name: "петр", age: 24)
+        let user1 = User(login: "иван", password: "ivan1", person: person1)
+        let user2 = User(login: "анна", password: "anna2", person: person2)
+        let user3 = User(login: "петр", password: "peter3", person: person3)
         
         // Добавляем людей в список
         helper.addPerson(user1)
@@ -32,5 +33,3 @@ import UIKit
 
         }
     }
-
-

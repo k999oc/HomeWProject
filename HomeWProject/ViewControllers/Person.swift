@@ -21,8 +21,4 @@ struct User {
     let login: String
     let password: String
     let person: Person
-    let name : String
-    let age: Int
-    
-    
 }
