@@ -4,35 +4,32 @@
 //
 //  Created by Шарон on 13.08.2025.
 //
-
 import UIKit
-class ViewController: UIViewController {
-   private let helper = Helper()
-    
-    override func viewDidLoad() {
+
+
+    class ViewController: UIViewController {
+       private var helper = PeopleHelper()
+        private let textlabel = UILabel()
+        private let repository = UserRepository()
+        override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemTeal
         view.alpha = 0.9
-        
-        // Создаем объекты Person
-        let person1 = Person(name: "Иван", surname: "Иванов")
-        let person2 = Person(name: "Анна", surname: "Петрова")
-        let person3 = Person(name: "Петр", surname: "Сидоров")
-        
-        // Создаем объекты User
-        let user1 = User(login: "ivan", password: "pass123", person: person1)
-        let user2 = User(login: "anna", password: "pass456", person: person2)
-        let user3 = User(login: "petr", password: "pass789", person: person3)
+
+        // Создаем экземпляры Person
+            let person1 = Person(name: "Иван", surname: "", age: 22)
+            let person2 = Person(name: "Анна", surname: "", age: 23)
+            let person3 = Person(name: "Петр", surname: "", age: 24)
+
+        // Создаем пользователей
+        let user1 = User(login: "иван", password: "ivan1", person: person1)
+        let user2 = User(login: "анна", password: "anna2", person: person2)
+        let user3 = User(login: "петр", password: "peter3", person: person3)
         
         // Добавляем людей в список
         helper.addPerson(user1)
         helper.addPerson(user2)
         helper.addPerson(user3)
-        
-        // Выводим все имена на консоль
-        let people = helper.getAllPeople()
-        for user in people {
-            print("Полное имя: \(user.person.fullName)")
+
         }
     }
-}
