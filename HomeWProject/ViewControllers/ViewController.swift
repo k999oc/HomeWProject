@@ -8,7 +8,7 @@ import UIKit
 
 
     class ViewController: UIViewController {
-       private var helper = PeopleHelper()
+       private var helper = Helper()
         private let textlabel = UILabel()
         private let repository = UserRepository()
         override func viewDidLoad() {
