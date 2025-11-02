@@ -8,18 +8,22 @@ import UIKit
 
 class Helper {
     private var people: [User] = []
-
+    
     func addPerson(_ user: User) {
         people.append(user)
     }
-
+    
     func addPeople(_ users: [User]) {
         people.append(contentsOf: users)
     }
-
+    
     func getAllPeople() -> [User] {
         return people
     }
+    
+    func addSomeElements() {
+        
+   }
 }
 
     class UserRepository {
@@ -36,3 +40,6 @@ class Helper {
             return [user1, user2, user3]
         }
      }
+
+
+

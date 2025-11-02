@@ -13,7 +13,7 @@ struct Person {
     let age: Int
     
     var fullName: String {
-    "\(name) \(surname)"
+        "\(name) \(surname)"
     }
 }
 
