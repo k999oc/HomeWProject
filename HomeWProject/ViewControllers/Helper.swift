@@ -23,23 +23,26 @@ class Helper {
     
     func addSomeElements() {
         
-   }
+    }
 }
 
-    class UserRepository {
-        func getUserRepository() -> [User] {
-           
+
+
+class UserRepository {
+    func getUserRepository() -> [User] {
+        
         let person1 = Person(name: "Иван", surname: "Иванов", age: 22)
         let person2 = Person(name: "Анна", surname: "Петрова", age: 22)
         let person3 = Person(name: "Петр", surname: "Сидоров", age: 22)
-            
-            
-        let user1 = User(login: "иван", password: "ivan1", person: person1)
-        let user2 = User(login: "анна", password: "anna2", person: person2)
-        let user3 = User(login: "петр", password: "peter3", person: person3)
-            return [user1, user2, user3]
-        }
-     }
-
-
-
+        
+        
+        let user1 = User(login: "Иван", password: "ivan1", person: person1)
+        let user2 = User(login: "Анна", password: "anna2", person: person2)
+        let user3 = User(login: "Петр", password: "peter3", person: person3)
+        return [user1, user2, user3]
+    }
+    func RandomUserName() {
+        let randomLogin = getUserRepository().randomElement()!.login
+        print(randomLogin)
+    }
+}
