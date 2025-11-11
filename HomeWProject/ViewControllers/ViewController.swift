@@ -26,15 +26,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let result = repository.getUserRepository()
+        
+        
+        
         view.addSubview(textlabel)
-        view.backgroundColor = .systemTeal
         view.addSubview(button)
+        
+        
+        view.backgroundColor = .systemTeal
+        
+        
         helper.addPeople(result)
         let people = helper.getAllPeople()
+        
+        
         for person in people {
             print(person.person.name)
             setupLabel()
             setupSecondLabel()
+            
         }
     }
     
